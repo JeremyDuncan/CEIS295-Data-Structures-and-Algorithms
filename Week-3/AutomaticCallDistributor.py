@@ -36,7 +36,7 @@ calls_waiting = Queue()
 call_number = 0
 
 # how long is the simulation?
-seconds = int(input("How many seconds do you want to simulate? (y/n): "))
+seconds = int(input("How many seconds do you want to simulate?: "))
 
 # Run the simulation for the given number of seconds
 for i in range(seconds):
