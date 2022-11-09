@@ -13,4 +13,8 @@ class Call:
         self.call_date = strftime("%m/%d/%Y")
         self.call_time = strftime("%H:%M")
         
-    
+    def __str__(self):
+        return str(self.client_id) + ", " + self.client_name + \
+            "\n\tPhone: " + self.client_phone + \
+                "\tDate/Time: " + self.call_date + "@ " + self.call_time 
+                    
