@@ -1,6 +1,5 @@
 # Name: Jeremy Duncan
 # Date: November 9th 2022
-# Machine: 2021 14" MacBook Pro
 
 # Used for current time and date
 from time import strftime
