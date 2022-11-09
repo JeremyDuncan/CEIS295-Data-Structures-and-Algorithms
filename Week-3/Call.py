@@ -16,5 +16,5 @@ class Call:
     def __str__(self):
         return str(self.client_id) + ", " + self.client_name + \
             "\n\tPhone: " + self.client_phone + \
-                "\tDate/Time: " + self.call_date + "@ " + self.call_time 
+                "\tDate/Time: " + self.call_date + " @ " + self.call_time 
                     
