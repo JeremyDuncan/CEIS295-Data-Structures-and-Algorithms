@@ -1,5 +1,6 @@
 # Name: Jeremy Duncan
 # Date: November 2nd 2022
+# Machine: 2021 14" MacBook Pro
 
 from Node import Node
 
@@ -135,57 +136,6 @@ class LinkedList:
                 
         # delete the node at that index
         temp.next = temp.next.next
-        
-    def remove(self, data):
-        # Special case, empty list so nothing to remove
-        if self.__head == None:
-            return       # end the method
-        
-        #Create a variable for return value
-        result = None
-        
-        # Special case, head node has data
-        if self.__head.data == data:
-            result = self.__head.data
-            
-            if self.__head.next == None:  # single node only
-                self.__head == None 
-                self.__tail == None
-            else:
-                self.__head = self.__head.next   # use second node as head
- 
-            return result        # end the method
-            
-        # traverse the list and find the NODE BEFORE the index
-        temp = self.__head 
-        parent = None
-        
-        while temp.next is not None:
-            parent = temp 
-            temp = temp.next 
-            if temp.data == data:
-                result = temp.data
-                parent.next = temp.next # delete the node by overwriting the parent's next
-                break     # end the loop
-        return result
-  
-    def search(self, data):
-        if self.__head == None:
-            return None
-        
-        # traverse the list and find the data if possible
-        temp = self.__head
-        
-        while temp is not None:
-            if temp.data == data:
-                return temp.data
-            else:
-                temp = temp.next
-        
-        # If the above loop finishes without returning,
-        # it means the search item was not found.
-        return None
-	
         
     def is_empty(self):
         # if the head is empty, then the list is empty
