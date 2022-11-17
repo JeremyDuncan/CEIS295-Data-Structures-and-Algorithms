@@ -15,8 +15,8 @@ print()
 
 # input_file_name = 'ClientData100.csv'
 # input_file_name = 'ClientData1000.csv'
-input_file_name = 'ClientData10000.csv'
-# input_file_name = 'ClientData100000.csv'
+# input_file_name = 'ClientData10000.csv'
+input_file_name = 'ClientData100000.csv'
 
 # create a list
 clients = []
@@ -43,7 +43,7 @@ num_records = len(clients)
 #===============================================================================
 # Scenario 1: Sorting records in a from a datafile
 #===============================================================================
-section_title = "Scenario: Sorting " + str(num_records) + " Queue or Call Queue" 
+section_title = "Scenario: Sorting " + str(num_records) + " Queue" 
 print(section_title)
 print("-" * len(section_title))
 
