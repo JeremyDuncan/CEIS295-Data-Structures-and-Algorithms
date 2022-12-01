@@ -52,8 +52,6 @@ for i in range(num_records):
 end_time = time.time()
 total_time = end_time - start_time
 print("Seconds to add records: {:.6f}".format(total_time))
-# pauses screen to user can see time
-__ = input("Press Enter to Continue")
 
 # how long does it take to remove the records
 start_time = time.time()
@@ -128,7 +126,7 @@ for i in range(1000):
     smallest_id = 100001
     largest_id = smallest_id + num_records
     random_num = random.randint(smallest_id, largest_id)
-    print(my_bst.remove(Client(random_num)))
+    my_bst.remove(Client(random_num))
 
 end_time = time.time()
 total_time = end_time - start_time
